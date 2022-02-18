@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Universal Comments",
+	"version": "1.0",
+
+	"description": "Adds a comment section to any website a user visits. Comments are global to all users",
+
+	"icons": {
+		"48": "resources/icons/comment-solid.png"
+	},
+
+	"permissions": ["<all_urls>", "theme"],
+	"sidebar_action": {
+		"default_title": "Universal Comments",
+		"default_panel": "views/sidebar/index.html",
+		"default_icon": "resources/icons/comment-solid.png"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "theme-integrated-sidebar@mozilla.org",
+			"strict_min_version": "58.0a1"
+		}
+	}
+}
